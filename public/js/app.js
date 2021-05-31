@@ -10,7 +10,7 @@ weatherForm.addEventListener('click', (e) => {
     const location = search.value;
     messageOne.textContent = 'loading';
     messageTwo.textContent = '';
-    fetch(`/weather?address=${location}`)
+    fetch(`https://nskotow-weather-application.herokuapp.com/weather?address=${location}`)
         .then(response => {
             response.json().then(d => {
                 if (d.err) {
