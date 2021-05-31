@@ -19,6 +19,8 @@ hbs.registerPartials(partialsPath);
 //Set up static dir to serv
 app.use(express.static(publicDirPath));
 
+
+
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
@@ -26,12 +28,18 @@ app.get('', (req, res) => {
     });
 });
 
+
+
+
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Get help from us',
         name: 'Skotow'
     });
 });
+
+
+
 
 app.get('/about', (req, res) => {
     res.render('about', {
