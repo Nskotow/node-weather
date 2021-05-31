@@ -11,7 +11,7 @@ const viewsPath = path.join(__dirname, '../templates')
 const partialsPath = path.join(__dirname, '../templates/partials');
 
 //set up handel bars and views
-app.set('view engine', 'hbs');
+app.engine('view engine', 'hbs');
 app.set('views', viewsPath);
 hbs.registerPartials(partialsPath);
 
