@@ -1,15 +1,24 @@
 {
   "name": "skotow",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
     "request": "^2.88.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nskotow/node-weather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nskotow/node-weather/issues"
+  },
+  "homepage": "https://github.com/Nskotow/node-weather#readme",
+  "description": ""
 }
