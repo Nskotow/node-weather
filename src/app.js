@@ -63,7 +63,6 @@ app.get('/weather', (req, res) => {
             if (erro) {
                 return res.send({erro})
             }
-
             res.send({
                 location: location,
                 temp: "Temperature now is: " + temp + 'C',
